@@ -1,3 +1,6 @@
 # MY-ROOT-ANDROID
 
-## NEW ANDROID DEVICE IDENTITY
+## ANDROID DEVICE IDENTITY
+- [android-identity](android-identity.md)
+
+- [hide-root-detection](root-detection.md)
