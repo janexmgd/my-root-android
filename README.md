@@ -3,4 +3,4 @@
 ## ANDROID DEVICE IDENTITY
 - [android-identity](android-identity.md)
 
-- [hide-root-detection](root-detection.md)
+- [hide-root](hide-root.md)
