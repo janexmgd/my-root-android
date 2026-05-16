@@ -1,40 +1,87 @@
-# hide root
+# Hide Root
 
-[back](./README.md)
+[← Back](./README.md)
 
+---
 
-## bahan
+## Bahan
 
-- [lsposed](https://github.com/JingMatrix/Vector) ( pake versi zygisk )
+- [LSPosed](https://github.com/JingMatrix/Vector) *(gunakan versi Zygisk)*
+- [HMA (Hide My Applist)](https://github.com/dr-tsng/hide-my-applist)
+- [PlayIntegrityFork](https://github.com/osm0sis/PlayIntegrityFork) *(opsional)*
 
-- [HMA](https://github.com/dr-tsng/hide-my-applist)
+---
 
-- [PlayIntegrityFork](https://github.com/osm0sis/PlayIntegrityFork) (optional)
+## Steps
 
+### 1. Install Magisk dan Shamiko
 
-## steps
-- saya menggunakan [magisk](https://github.com/topjohnwu/magisk) dan [shamiko](https://github.com/LSPosed/LSPosed.github.io)
+Saya menggunakan:
 
-    ![magisk-version](./assets/magisk%20version.jpeg)
+- [Magisk](https://github.com/topjohnwu/magisk)
+- [Shamiko](https://github.com/LSPosed/LSPosed.github.io)
 
-    ![magisk-setting](./assets/magisk%20setting.jpeg)
+#### Screenshot
 
-    ![magisk-module](./assets/hide%20magisk.jpeg)
+![magisk-version](./assets/magisk%20version.jpeg)
 
-    ![shamiko](./assets/shamiko.jpeg)
-- install module [lsposed](https://github.com/JingMatrix/Vector) di magisk restart (skip jika sudah install)
+![magisk-setting](./assets/magisk%20setting.jpeg)
 
-- install module [HMA](https://github.com/dr-tsng/hide-my-applist) di [lsposed](https://github.com/JingMatrix/Vector), dan beri checklist seperti ini 
-     ![img](./assets/hmaLsPosed.jpeg)
+![magisk-module](./assets/hide%20magisk.jpeg)
 
-- buka aplikasi [HMA](https://github.com/dr-tsng/hide-my-applist), buat blacklist template dan pilih aplikasi yang mau di hide ( disini saya hide aplikasi magisk, dan beberapa module lsposed) 
+![shamiko](./assets/shamiko.jpeg)
 
-    ![template](./assets/hma%20template.jpeg)
+---
 
-- untuk apply hide root nya, kita harus terapkan template hma tadi ke aplikasi target kita 
-    ![ex](/assets/proof.jpeg)
+### 2. Install LSPosed
 
-- gunakan detection test dahulu untuk memastikan berhasil atau tidaknya
-    ![detectiontest](./assets/detection%20test.jpeg)
+Install module [LSPosed](https://github.com/JingMatrix/Vector) melalui Magisk, lalu restart device.
 
-- tak semua aplikasi dapat menggunakan methode ini 
+> Skip langkah ini jika LSPosed sudah terinstall.
+
+---
+
+### 3. Install HMA di LSPosed
+
+Install module [HMA](https://github.com/dr-tsng/hide-my-applist) melalui LSPosed, lalu beri checklist seperti berikut:
+
+![img](./assets/hmaLsPosed.jpeg)
+
+---
+
+### 4. Buat Blacklist Template di HMA
+
+Buka aplikasi HMA, lalu:
+
+- Buat blacklist template
+- Pilih aplikasi yang ingin di-hide
+
+Contoh yang saya hide:
+
+- Magisk
+- Beberapa module LSPosed
+
+![template](./assets/hma%20template.jpeg)
+
+---
+
+### 5. Terapkan Template ke Aplikasi Target
+
+Untuk mengaktifkan hide root, terapkan template HMA tadi ke aplikasi target.
+
+![ex](./assets/proof.jpeg)
+
+---
+
+### 6. Lakukan Detection Test
+
+Gunakan aplikasi detection test terlebih dahulu untuk memastikan hide root berhasil.
+
+![detectiontest](./assets/detection%20test.jpeg)
+
+---
+
+## Notes
+
+- Tidak semua aplikasi dapat menggunakan metode ini.
+- Beberapa aplikasi memiliki proteksi root detection yang lebih ketat.

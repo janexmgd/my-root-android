@@ -1,23 +1,63 @@
-# ANDROID DEVICE IDENTITY
+# Android Device Identity
 
-[back](./README.md)
+[← Back](./README.md)
+
+---
 
 ## Bahan
-- android dengan akses root (pake magisk gw)
-- [lsposed](https://github.com/JingMatrix/Vector) ( pake versi zygisk )
-- [DeviceSpoofLabs-hooks](https://github.com/yubunus/DeviceSpoofLab-Hooks)
+
+- Android dengan akses root *(saya menggunakan Magisk)*
+- [LSPosed](https://github.com/JingMatrix/Vector) *(gunakan versi Zygisk)*
+- [DeviceSpoofLabs-Hooks](https://github.com/yubunus/DeviceSpoofLab-Hooks)
+
+---
 
 ## Steps
-- aktifkan module [lsposed](https://github.com/JingMatrix/Vector) di magisk kemudian restart
 
-- aktifkan module [DeviceSpoofLabs-hooks](https://github.com/yubunus/DeviceSpoofLab-Hooks) dan beri checklist ke aplikasi yang mau di hooks kemudian restart
+### 1. Aktifkan LSPosed
 
-    ![img](./assets/deviceSpoofLabs.jpeg)
+Aktifkan module [LSPosed](https://github.com/JingMatrix/Vector) di Magisk, lalu restart device.
 
-- setiap mau generate device identity baru, hapus data aplikasi [DeviceSpoofLabs-hooks](https://github.com/yubunus/DeviceSpoofLab-Hooks) dan aplikasi yang mau di hooks,kemudian buka aplikasi [DeviceSpoofLabs-hooks](https://github.com/yubunus/DeviceSpoofLab-Hooks) agar dia generate device baru, tak perlu restart untuk menerapkan perubahan
+---
 
-    ![before](./assets/before.jpeg)
-    
-    ![after](./assets/after.jpeg)
+### 2. Aktifkan DeviceSpoofLabs-Hooks
 
-- jadi inti dari steps ini adalah, hapus data aplikasi dan [DeviceSpoofLabs-hooks](https://github.com/yubunus/DeviceSpoofLab-Hooks), kemudian buka [DeviceSpoofLabs-hooks](https://github.com/yubunus/DeviceSpoofLab-Hooks) (untuk generate device id), baru buka aplikasi lagi
+Aktifkan module [DeviceSpoofLabs-Hooks](https://github.com/yubunus/DeviceSpoofLab-Hooks), lalu beri checklist pada aplikasi yang ingin di-hook.
+
+Setelah itu, restart device.
+
+![img](./assets/deviceSpoofLabs.jpeg)
+
+---
+
+### 3. Generate Device Identity Baru
+
+Setiap ingin membuat device identity baru:
+
+1. Hapus data aplikasi target
+2. Hapus data aplikasi [DeviceSpoofLabs-Hooks](https://github.com/yubunus/DeviceSpoofLab-Hooks)
+3. Buka aplikasi DeviceSpoofLabs-Hooks agar otomatis generate identity baru
+4. Setelah selesai, buka kembali aplikasi target
+
+> Tidak perlu restart untuk menerapkan perubahan.
+
+#### Screenshot
+
+**Before**
+
+![before](./assets/before.jpeg)
+
+**After**
+
+![after](./assets/after.jpeg)
+
+---
+
+## Inti Langkah
+
+Singkatnya:
+
+1. Hapus data aplikasi target
+2. Hapus data DeviceSpoofLabs-Hooks
+3. Buka DeviceSpoofLabs-Hooks untuk generate device ID baru
+4. Buka kembali aplikasi target
