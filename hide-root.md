@@ -24,12 +24,17 @@
     ![shamiko](./assets/shamiko.jpeg)
 - install module [lsposed](https://github.com/JingMatrix/Vector) di magisk restart (skip jika sudah install)
 
-- install module [HMA](https://github.com/dr-tsng/hide-my-applist) di [lsposed](https://github.com/JingMatrix/Vector), dan beri checklist seperti ini  ![img](./assets/hmaLsPosed.jpeg), kemudian restart
+- install module [HMA](https://github.com/dr-tsng/hide-my-applist) di [lsposed](https://github.com/JingMatrix/Vector), dan beri checklist seperti ini 
+     ![img](./assets/hmaLsPosed.jpeg)
 
-- buka aplikasi [HMA](https://github.com/dr-tsng/hide-my-applist), buat blacklist template dan pilih aplikasi yang mau di hide ( disini saya hide aplikasi magisk, dan beberapa module lsposed) ![template](./assets/hma%20template.jpeg)
+- buka aplikasi [HMA](https://github.com/dr-tsng/hide-my-applist), buat blacklist template dan pilih aplikasi yang mau di hide ( disini saya hide aplikasi magisk, dan beberapa module lsposed) 
 
-- untuk apply hide root nya, kita harus terapkan template hma tadi ke aplikasi target kita [!ex](/assets/proof.jpeg)
+    ![template](./assets/hma%20template.jpeg)
 
-- gunakan detection test dahulu untuk memastikan berhasil atau tidaknya ![detectiontest](./assets/detection%20test.jpeg)
+- untuk apply hide root nya, kita harus terapkan template hma tadi ke aplikasi target kita 
+    ![ex](/assets/proof.jpeg)
+
+- gunakan detection test dahulu untuk memastikan berhasil atau tidaknya
+    ![detectiontest](./assets/detection%20test.jpeg)
 
 - tak semua aplikasi dapat menggunakan methode ini 
